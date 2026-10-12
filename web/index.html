@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>嚎哭深渊 · 1v1 MOBA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/web/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "/node_modules/three/build/three.module.js",
+        "three/addons/": "/node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div id="viewport"></div>
+    <canvas id="overlay"></canvas>
+    <div id="hud" class="hidden"></div>
+    <div id="menu"></div>
+    <div id="loading" class="hidden"><div class="spinner"></div><div>正在构建嚎哭深渊…</div></div>
+  </div>
+  <script type="module" src="/src/client/main.js"></script>
+</body>
+</html>

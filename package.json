@@ -1,0 +1,19 @@
+{
+  "name": "moba-rl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LoL-like 1v1 ARAM MOBA with a headless simulation core and an RL interface",
+  "scripts": {
+    "start": "node server/serve.js",
+    "rl": "node rl/bridge.js",
+    "test": "node tests/sim_test.js",
+    "bench": "node tests/bench.js"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.0"
+  }
+}
